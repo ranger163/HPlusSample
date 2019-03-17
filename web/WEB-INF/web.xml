@@ -6,7 +6,7 @@
 
     <!--<servlet>-->
         <!--<servlet-name>GetServlet</servlet-name>-->
-        <!--<servlet-class>com.test.GetServlets</servlet-class>-->
+        <!--<servlet-class>com.test.servlets.GetServlets</servlet-class>-->
     <!--</servlet>-->
     <!--<servlet-mapping>-->
         <!--<servlet-name>GetServlet</servlet-name>-->
