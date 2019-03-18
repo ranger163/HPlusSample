@@ -11,6 +11,7 @@ import java.util.List;
 
 public class ApplicationDao {
 
+    // Used to list all search results
     public List<Product> searchProducts(String searchString) {
 
         Product product = null;
@@ -36,5 +37,7 @@ public class ApplicationDao {
         }
         return products;
     }
+
+    
 
 }
