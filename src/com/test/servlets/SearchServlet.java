@@ -1,5 +1,6 @@
 package com.test.servlets;
 
+import com.test.Utils;
 import com.test.beans.Product;
 import com.test.dao.ApplicationDao;
 
@@ -41,14 +42,7 @@ public class SearchServlet extends HttpServlet {
      * @retuen
      **/
     public String getHtmlString(String filePath, List<Product> products) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(filePath));
-        String line = "";
-        StringBuffer buffer = new StringBuffer();
-        while ((line = reader.readLine()) != null) {
-            buffer.append(line);
-        }
-        reader.close();
-        String page = buffer.toString();
+        String page = Utils.getHtmlString(filePath);
         page = MessageFormat.format(page, products.get(0).getProductImgPath(),
                 products.get(1).getProductImgPath(),
                 products.get(2).getProductImgPath(),
