@@ -25,7 +25,7 @@
 					<li><a href='<%=response.encodeURL("viewProfile")%>'>view
 							my profile</a></li>							
 					<li><a href='#logout'>logout</a></li>
-					<li><a href="#redirect">linkedIn</a></li>
+					<li><a href="redirect">linkedIn</a></li>
 
 				</ul>
 				<!-- navbar -->
