@@ -29,10 +29,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="RUNTIME">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.41-bin.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-8.0.12.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
