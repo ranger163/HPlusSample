@@ -1,6 +1,9 @@
 package com.test.servlets;
 
+import org.omg.IOP.ServiceContext;
+
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/getServlets",
-        initParams = @WebInitParam(name = "URL", value = "http://www.weatherservice.com"))
+//@WebServlet(urlPatterns = "/getServlets",
+//        initParams = @WebInitParam(name = "URL", value = "http://www.weatherservice.com"))
 public class GetServlets extends HttpServlet {
 
     private PrintWriter writer;
@@ -22,6 +25,9 @@ public class GetServlets extends HttpServlet {
 
         ServletConfig config = getServletConfig();
         System.out.println(config.getInitParameter("URL"));
+
+        ServletContext servletContext = getServletContext();
+        System.out.println(servletContext.getInitParameter("databaseUrl"));
 
         String htmlResponse = "<html><h1>Welcome to servlets.</h1></html>";
         writer.write(htmlResponse);
