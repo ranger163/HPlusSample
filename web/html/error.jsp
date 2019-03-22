@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1>Sorry, some error occurred, please try later.</h1>
+<%=exception%>
 </body>
 </html>
