@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@page errorPage="error.jsp"%>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -19,7 +20,7 @@
 				<!-- branding -->
 
 				<ul class="navbar">
-					<li><a href="home.jsp">home</a></li>
+					<li><a href="home">home</a></li>
 					<li><a href="#orderHistory">order history</a></li>
 					<!-- <li><a href="viewProfile">view my profile</a></li> -->
 					<li><a href='<%=response.encodeURL("viewProfile")%>'>view

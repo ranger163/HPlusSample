@@ -2,10 +2,9 @@
 <%@page import="com.test.beans.Product" %>
 <%@page import="java.util.ArrayList" %>
 <%@page import="java.util.Iterator" %>
-<%@page import="java.util.List" buffer="8kb" isELIgnored="false"
-        session="true" contentType="text/html; charset=ISO-8859-1"
-        pageEncoding="ISO-8859-1" isThreadSafe="true" isErrorPage="false"
-        errorPage="error.jsp" %>
+<%@page import="java.util.List" isELIgnored="false"
+        contentType="text/html; charset=ISO-8859-1"
+        pageEncoding="ISO-8859-1" errorPage="error.jsp" %>
 
 
 <html lang="en">
@@ -21,7 +20,7 @@
     <nav class="nav" role="navigation">
         <div class="container nav-elements">
             <div class="branding">
-                <a href="home.jsp"><img src="../images/hpluslogo.svg"
+                <a href="home"><img src="../images/hpluslogo.svg"
                                         alt="Logo - H Plus Sports"></a>
             </div>
             <!-- branding -->

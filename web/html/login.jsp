@@ -1,4 +1,4 @@
-<%@ page import="com.test.Utils" %>
+<%@ page errorPage="error.jsp" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.util.Calendar" %>

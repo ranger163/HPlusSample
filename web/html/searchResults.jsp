@@ -1,7 +1,7 @@
 <%@ page import="com.test.beans.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.Iterator" %>
+<%@ page errorPage="error.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
