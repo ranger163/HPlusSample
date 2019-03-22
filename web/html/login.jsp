@@ -1,7 +1,8 @@
+<%@ page import="com.test.Utils" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Calendar" %>
 <!DOCTYPE html>
-<%@page import="java.util.Calendar"%>
-<%@page import="java.util.Date"%>
-<%@page import="java.text.SimpleDateFormat"%>
 <html>
 <head>
 <link rel="stylesheet" href="css/style.css">
@@ -40,8 +41,8 @@
 
 
 	<section>
-
-	<%=displayDate()%>
+		<%--displays data and time for today--%>
+		<%=displayDate()%>
 	</section>
 	<section id="login" class="section">
 		<div class="container tagline">
@@ -86,14 +87,12 @@
 		<!-- container -->
 	</footer>
 	<!-- footer -->
-<%!
-
-public String displayDate(){
-	SimpleDateFormat dateFormat = new SimpleDateFormat("YYYY-mm-dd hh:mm");
-	Date toDate = Calendar.getInstance().getTime();
-	return dateFormat.format(toDate);
-}
-
-%>
+    <%!
+        private String displayDate(){
+        SimpleDateFormat dateFormat=new SimpleDateFormat("YYYY/MM/dd hh:mm");
+        Date date= Calendar.getInstance().getTime();
+        return dateFormat.format(date);
+        }
+    %>
 </body>
 </html>
